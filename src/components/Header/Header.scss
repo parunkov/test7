@@ -28,12 +28,24 @@
 	&__navigation {
 		flex: 0 0 auto;
 	}
+	&__navigation-item-wrapper {
+		position: relative;
+		padding-right: 43px;
+		padding-bottom: 7px;
+		border-bottom: 4px solid transparent;
+		&:last-child {
+			padding-right: 0;
+		}
+		&_active {
+			// border-bottom: 4px solid #D88F5E;
+
+		}
+	}
 	&__navigation-item {
 		display: inline-block;
 		padding-bottom: 7px;
 		padding-left: 6.5px;
 		padding-right: 6.5px;
-		margin-right: 43px;
 		margin-bottom: 12px;
 		font-family: Gilroy;
 		font-style: normal;
@@ -44,12 +56,26 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		color: #262525;
-		&:last-child {
-			margin-right: 0;
-		}
+		border-bottom: 4px solid transparent;
 		&_active, &:hover, &:active {
 			border-bottom: 4px solid #D88F5E;
 		}
+	}
+	&__navigation-border-wrapper {
+		position: absolute;
+		left: 0;
+		bottom: -4px;
+		width: 100%;
+		height: 4px;
+		background: transparent;
+	}
+	&__navigation-border {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		background: red;
 	}
 	&__phone {
 		flex: 0 0 auto;
