@@ -1,0 +1,77 @@
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 93px;
+	padding-right: 97px;
+	&__logo {
+		position: absolute;
+		top: 6px;
+		left: 0;
+		width: 70px;
+		height: 70px;
+		background: #262525;
+		z-index: 10;
+	}
+	&__title {
+		flex: 0 0 auto;
+		margin-top: 4px;
+		font-family: Gilroy;
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 21px;
+		letter-spacing: 0.290629px;
+		text-transform: uppercase;
+		color: #262525
+	}
+	&__navigation {
+		flex: 0 0 auto;
+	}
+	&__navigation-item {
+		display: inline-block;
+		padding-bottom: 7px;
+		padding-left: 6.5px;
+		padding-right: 6.5px;
+		margin-right: 43px;
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0.8px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #262525;
+		&:last-child {
+			margin-right: 0;
+		}
+		&_active, &:hover, &:active {
+			border-bottom: 4px solid #D88F5E;
+		}
+	}
+	&__phone {
+		flex: 0 0 auto;
+		margin-top: 4px;
+		font-family: Gilroy;
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 21px;
+		letter-spacing: 0.290629px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #262525;
+	}
+	&__image {
+		position: absolute;
+		top: 6px;
+		right: 0;
+		width: 70px;
+		height: 70px;
+		background: #262525;
+		z-index: 10;
+		background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2229%22%20height%3D%2229%22%20fill%3D%22none%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M.998%2026.552L26.556.995l1.449%201.45L2.447%2028%20.998%2026.552zm12%200l13.558-13.556%201.449%201.448L14.447%2028%2013%2026.552zM14.558.995L.998%2014.553l1.449%201.448L16.004%202.444%2014.557.995z%22%20fill%3D%22%23F0F0F0%22%2F%3E%3C%2Fsvg%3E');
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+}
