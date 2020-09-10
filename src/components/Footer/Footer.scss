@@ -1,0 +1,19 @@
+.footer {
+	padding-left: 36px;
+	padding-top: 24.5px;
+	padding-bottom: 21px;
+	&__text {
+		font-family: Gilroy;
+		font-weight: 300;
+		font-size: 13px;
+		line-height: 15px;
+		letter-spacing: 0.175729px;
+		text-transform: uppercase;
+		color: #505050;
+	}
+	&__line {
+		display: inline-block;
+		margin-left: 21px;
+		margin-right: 21px;
+	}
+}

@@ -5,6 +5,8 @@ import landscaping from '../images/landscaping.jpg';
 import security from '../images/security.jpg';
 import transport from '../images/transport.jpg';
 
+const SET_ITEM_ID = 'about/SET_ITEM_ID';
+
 const aboutItems = [
 	{
 		id: 1,
@@ -57,9 +59,21 @@ const initialState = {
 
 const aboutReducer  = (state = initialState, action) => {
 	switch (action.type) {
+		case SET_ITEM_ID: {
+			return {
+				...state,
+				...action.payload
+			}
+		}
 		default:
 			return state;
 	}
 }
 
+const setItemId = (currentItemId) => ({
+	type: SET_ITEM_ID,
+	payload: {currentItemId}
+});
+
+export {setItemId};
 export default aboutReducer;

@@ -1,27 +1,27 @@
 import React from 'react';
 import './About.scss';
 
-const About = ({id, items}) => {
+const About = ({id, items, setItemId}) => {
 	return(
 		<div className="about">
 			<div className="about__navigation">
 				<div className="about__nawigation-item-wrapper">
-					<div className={id === 1 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"}>Архитектура</div>
+					<div className={id === 1 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"} onClick={() => setItemId(1)}>Архитектура</div>
 				</div>
 				<div className="about__nawigation-item-wrapper">
-					<div className={id === 2 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"}>Благоустройство</div>
+					<div className={id === 2 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"} onClick={() => setItemId(2)}>Благоустройство</div>
 				</div>
 				<div className="about__nawigation-item-wrapper">
-					<div className={id === 3 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"}>Безопастность</div>
+					<div className={id === 3 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"} onClick={() => setItemId(3)}>Безопастность</div>
 				</div>
 				<div className="about__nawigation-item-wrapper">
-					<div className={id === 4 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"}>Инженерия</div>
+					<div className={id === 4 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"} onClick={() => setItemId(4)}>Инженерия</div>
 				</div>
 				<div className="about__nawigation-item-wrapper">
-					<div className={id === 5 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"}>Инфраструктура</div>
+					<div className={id === 5 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"} onClick={() => setItemId(5)}>Инфраструктура</div>
 				</div>
 				<div className="about__nawigation-item-wrapper">
-					<div className={id === 6 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"}>Транспортная доступность</div>
+					<div className={id === 6 ? "about__navigation-item about__navigation-item_active" : "about__navigation-item"} onClick={() => setItemId(6)}>Транспортная доступность</div>
 				</div>
 			</div>
 			<div className="about__main">

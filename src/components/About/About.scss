@@ -2,6 +2,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: row;
+	padding-right: 35px;
 	&__navigation {
 		flex: 0 0 319px;
 		padding-top: 295px;
@@ -50,7 +51,7 @@
 	&__main {
 		flex: 1 0 435px;
 		padding-top: 326px;
-		padding-right: 15px;
+		padding-left: 20px;
 		background: #F0F0F0;
 	}
 	&__main-inner {
@@ -80,6 +81,7 @@
 		padding-left: 7px;
 		padding-right: 7px;
 		margin-left: 5px;
+		margin-bottom: 152px;
 		font-family: Roboto;
 		font-weight: normal;
 		font-size: 18px;
@@ -88,5 +90,18 @@
 		color: #F0F0F0;
 		background: #262525;
 		text-decoration: none;
+	}
+	&__number {
+		font-family: Gilroy;
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 20px;
+		letter-spacing: 5px;
+		color: #505050;
+	}
+	&__image {
+		width: 758px;
+		height: 840px;
+		overflow: hidden;
 	}
 }

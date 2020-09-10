@@ -1,5 +1,6 @@
 import About from './About';
 import {connect} from 'react-redux';
+import {setItemId} from '../../redux/about-reducer';
 
 const mapStateToProps = (state) => {
 	return {
@@ -8,4 +9,4 @@ const mapStateToProps = (state) => {
 	}
 }
 
-export default connect(mapStateToProps, {})(About);
+export default connect(mapStateToProps, {setItemId})(About);
