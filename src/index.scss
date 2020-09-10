@@ -4,6 +4,24 @@
   font-family: Gilroy;
   src: url("./fonts/Gilroy-ExtraBold.otf");
 }
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
 
 html {
   box-sizing: border-box;
