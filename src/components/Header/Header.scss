@@ -37,10 +37,6 @@
 		&:nth-child(4) {
 			padding-right: 0;
 		}
-		&_active {
-			// border-bottom: 4px solid #D88F5E;
-
-		}
 	}
 	&__navigation-item {
 		display: inline-block;
@@ -58,8 +54,8 @@
 		text-decoration: none;
 		color: #262525;
 		border-bottom: 4px solid transparent;
-		&_active, &:hover, &:active {
-			// border-bottom: 4px solid #D88F5E;
+		&_active {
+			cursor: default;
 		}
 	}
 	&__navigation-border-wrapper {
@@ -74,7 +70,7 @@
 		position: absolute;
 		bottom: 12px;
 		height: 4px;
-		background: red;
+		background: #D88F5E;
 	}
 	&__phone {
 		flex: 0 0 auto;

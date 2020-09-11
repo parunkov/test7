@@ -9,21 +9,8 @@ const NavigationItem = ({text, id, activeItem, setActiveItem, delta, setDelta}) 
 	}
 	return(
 		<span className="header__navigation-item-wrapper">
-			<a href="#" className={id === activeItem ? "header__navigation-item header__navigation-item_active" : "header__navigation-item"} onClick={() => setActiveItem(id)} onMouseEnter={onHover} onMouseLeave={() => {}}>{text}
-
+			<a href="#" className={id === activeItem ? "header__navigation-item header__navigation-item_active" : "header__navigation-item"} onClick={() => 	setActiveItem(id)} onMouseEnter={onHover} onMouseLeave={() => setDelta(0)}>{text}
 			</a>
-			{/*<span className="header__navigation-border-wrapper">
-				<CSSTransition
-					in={underlinedItem}
-					timeout={300}
-					classNames="header__navigation-border"
-					unmountOnExit
-					onEnter={() => {}}
-					onExited={() => {}}
-				>
-					<span className="header__navigation-border"></span>
-				</CSSTransition>
-			</span>*/}
 		</span>
 	);
 }
@@ -35,6 +22,11 @@ const Header = () => {
 	const [startRight, setStartRight] = useState(468.2);
 	const [left, setLeft] = useState(0);
 	const [right, setRight] = useState(468.2);
+
+	useEffect(() => {
+		setDelta(0);
+	},[activeItem])
+
 	useEffect(() => {
 		let left = 0;
 		let right = 104.2;
@@ -139,14 +131,12 @@ const Header = () => {
 
 	const defaultStyle = delta < 0 ? 
 	{
-		// transition: `right ${duration}ms`,
 		transition: `left ${duration}ms`,
 		left: startLeft,
 		right: startRight,
 	} :
 	{
 		transition: `right ${duration}ms`,
-		// transition: `left ${duration}ms`,
 		left: startLeft,
 		right: startRight,
 	} 
@@ -195,7 +185,7 @@ const Header = () => {
 					delta={delta}
 					setDelta={setDelta}
 				/>
-				<Transition in={delta} timeout={duration}>
+				<Transition in={!!delta} timeout={duration}>
 					{state => (
 						<div className="header__border" style={{
 							...defaultStyle,
@@ -203,7 +193,6 @@ const Header = () => {
 						}}></div>
 					)}
 				</Transition>
-				{/*<div className="header__border"></div>*/}
 			</nav>
 			<a href="tel:8 888 888 88 88" className="header__phone">8 888 888 88 88</a>
 			<div className="header__image"></div>
