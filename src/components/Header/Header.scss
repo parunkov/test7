@@ -26,6 +26,7 @@
 		color: #262525
 	}
 	&__navigation {
+		position: relative;
 		flex: 0 0 auto;
 	}
 	&__navigation-item-wrapper {
@@ -33,7 +34,7 @@
 		padding-right: 43px;
 		padding-bottom: 7px;
 		border-bottom: 4px solid transparent;
-		&:last-child {
+		&:nth-child(4) {
 			padding-right: 0;
 		}
 		&_active {
@@ -58,7 +59,7 @@
 		color: #262525;
 		border-bottom: 4px solid transparent;
 		&_active, &:hover, &:active {
-			border-bottom: 4px solid #D88F5E;
+			// border-bottom: 4px solid #D88F5E;
 		}
 	}
 	&__navigation-border-wrapper {
@@ -69,11 +70,9 @@
 		height: 4px;
 		background: transparent;
 	}
-	&__navigation-border {
+	&__border {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
+		bottom: 12px;
 		height: 4px;
 		background: red;
 	}
