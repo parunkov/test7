@@ -5,6 +5,7 @@ import {setItemId} from '../../redux/about-reducer';
 const mapStateToProps = (state) => {
 	return {
 		id: state.about.currentItemId,
+		previousId: state.about.previousItemId,
 		items: state.about.items
 	}
 }

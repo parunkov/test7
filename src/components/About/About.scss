@@ -99,9 +99,19 @@
 		letter-spacing: 5px;
 		color: #505050;
 	}
-	&__image {
+	&__image-wrapper {
+		position: relative;
 		width: 758px;
 		height: 840px;
 		overflow: hidden;
+	}
+	&__image-back {
+		position: absolute;
+		width: 758px;
+		height: 840px;
+	}
+	&__image {
+		position: absolute;
+		width: 758px;
 	}
 }

@@ -54,7 +54,8 @@ const aboutItems = [
 
 const initialState = {
 	currentItemId: 1,
-	items: aboutItems
+	items: aboutItems,
+	previousItemId: 1
 }
 
 const aboutReducer  = (state = initialState, action) => {
@@ -62,7 +63,8 @@ const aboutReducer  = (state = initialState, action) => {
 		case SET_ITEM_ID: {
 			return {
 				...state,
-				...action.payload
+				previousItemId: state.currentItemId,
+				currentItemId: action.currentItemId
 			}
 		}
 		default:
@@ -72,7 +74,7 @@ const aboutReducer  = (state = initialState, action) => {
 
 const setItemId = (currentItemId) => ({
 	type: SET_ITEM_ID,
-	payload: {currentItemId}
+	currentItemId
 });
 
 export {setItemId};
