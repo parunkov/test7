@@ -128,18 +128,11 @@ const Header = () => {
 	},[delta, activeItem]);
 
 	const duration = 300;
-
-	const defaultStyle = delta < 0 ? 
-	{
-		transition: `left ${duration}ms`,
+	const defaultStyle = {
+		transition: `all ${duration}ms`,
 		left: startLeft,
 		right: startRight,
-	} :
-	{
-		transition: `right ${duration}ms`,
-		left: startLeft,
-		right: startRight,
-	} 
+	}
 
 	const transitionStyles = {
 		entering: { left: startLeft, right: startRight },
