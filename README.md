@@ -6,6 +6,12 @@
 
 https://parunkov.github.io/test7/
 
+## Описание задания
+
+Верстка макета Figma:
+https://www.figma.com/file/yXeGSF4f0UTciZWfIYKdx9/MST-%7C-Frontend-Test---1?node-id=9%3A208
+Пример как должно работать переключение между страницами и между экранами разделов на странице, показано через анимацию в презентационным режиме Figma. А так вот дополнительная ссылка на видео демонстрацию:
+https://drive.google.com/file/d/1WbJQ0TL8pss1yrmEGhSf1bsY58tTWyxc/view?usp=sharing
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
